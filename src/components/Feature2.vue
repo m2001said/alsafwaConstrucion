@@ -3,10 +3,10 @@
     <div class="polygon"></div>
     <div class="clip-box flex">
       <div class="clip-box-images flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/2-2D-3D/2.png" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/2-2D-3D/3.jpg" />
+        <img class="img-1" alt="feature2 design" src="../assets/images/2-2D-3D/2.webp" />
+        <img class="img-2" alt="feature2 design" src="../assets/images/2-2D-3D/3.webp" />
       </div>
-      <img class="img-3" alt="feature2 design" src="../assets/images/2-2D-3D/1.jpg" />
+      <img class="img-3" alt="feature2 design" src="../assets/images/2-2D-3D/1.webp" />
     </div>
 
     <div class="gradient-box flex flex-col">

@@ -10,12 +10,12 @@
     <div class="polygon"></div>
     <div class="clip-box flex">
       <div class="clip-box-images clip-box-images-1 flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/1.jpg" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/2.jpg" />
+        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/1.webp" />
+        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/2.webp" />
       </div>
       <div class="clip-box-images flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/3.jpg" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/4.jpg" />
+        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/3.webp" />
+        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/4.webp" />
       </div>
     </div>
   </div>

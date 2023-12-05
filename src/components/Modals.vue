@@ -16,53 +16,53 @@
 <script setup>
 import BaseModal from "./ui/BaseModal.vue";
 
-import concrete1 from "../assets/images/4-Concrete/1.jpg";
-import concrete2 from "../assets/images/4-Concrete/2.jpg";
-import concrete3 from "../assets/images/4-Concrete/3.jpg";
+import concrete1 from "../assets/images/4-Concrete/1.webp";
+import concrete2 from "../assets/images/4-Concrete/2.webp";
+import concrete3 from "../assets/images/4-Concrete/3.webp";
 
-import interlock1 from "../assets/images/5-Interlock/1.jpg";
-import interlock2 from "../assets/images/5-Interlock/2.jpg";
-import interlock3 from "../assets/images/5-Interlock/3.jpg";
+import interlock1 from "../assets/images/5-Interlock/1.webp";
+import interlock2 from "../assets/images/5-Interlock/2.webp";
+import interlock3 from "../assets/images/5-Interlock/3.webp";
 
-import isolation1 from "../assets/images/6-Isolation/1.jpg";
-import isolation2 from "../assets/images/6-Isolation/2.jpg";
-import isolation3 from "../assets/images/6-Isolation/3.jpg";
+import isolation1 from "../assets/images/6-Isolation/1.webp";
+import isolation2 from "../assets/images/6-Isolation/2.webp";
+import isolation3 from "../assets/images/6-Isolation/3.webp";
 
-import infra1 from "../assets/images/7-Infra/1.jpg";
-import infra2 from "../assets/images/7-Infra/2.jpg";
-import infra3 from "../assets/images/7-Infra/3.jpg";
+import infra1 from "../assets/images/7-Infra/1.webp";
+import infra2 from "../assets/images/7-Infra/2.webp";
+import infra3 from "../assets/images/7-Infra/3.webp";
 
-import walls1 from "../assets/images/8-Walls/1.jpg";
-import walls2 from "../assets/images/8-Walls/2.jpg";
-import walls3 from "../assets/images/8-Walls/3.jpg";
+import walls1 from "../assets/images/8-Walls/1.webp";
+import walls2 from "../assets/images/8-Walls/2.webp";
+import walls3 from "../assets/images/8-Walls/3.webp";
 
-import flooring1 from "../assets/images/9-Flooring/1.jpg";
-import flooring2 from "../assets/images/9-Flooring/2.jpg";
-import flooring3 from "../assets/images/9-Flooring/3.jpg";
+import flooring1 from "../assets/images/9-Flooring/1.webp";
+import flooring2 from "../assets/images/9-Flooring/2.webp";
+import flooring3 from "../assets/images/9-Flooring/3.webp";
 
-import ceiling1 from "../assets/images/10-Ceiling/1.jpg";
-import ceiling2 from "../assets/images/10-Ceiling/2.jpg";
-import ceiling3 from "../assets/images/10-Ceiling/3.jpg";
+import ceiling1 from "../assets/images/10-Ceiling/1.webp";
+import ceiling2 from "../assets/images/10-Ceiling/2.webp";
+import ceiling3 from "../assets/images/10-Ceiling/3.webp";
 
-import cladding1 from "../assets/images/11-Cladding/1.jpg";
-import cladding2 from "../assets/images/11-Cladding/2.jpg";
-import cladding3 from "../assets/images/11-Cladding/3.jpg";
+import cladding1 from "../assets/images/11-Cladding/1.webp";
+import cladding2 from "../assets/images/11-Cladding/2.webp";
+import cladding3 from "../assets/images/11-Cladding/3.webp";
 
-import glass1 from "../assets/images/12-Glass/1.jpg";
-import glass2 from "../assets/images/12-Glass/2.jpg";
-import glass3 from "../assets/images/12-Glass/3.jpg";
+import glass1 from "../assets/images/12-Glass/1.webp";
+import glass2 from "../assets/images/12-Glass/2.webp";
+import glass3 from "../assets/images/12-Glass/3.webp";
 
-import painting1 from "../assets/images/13-Painting/1.jpg";
-import painting2 from "../assets/images/13-Painting/2.jpg";
-import painting3 from "../assets/images/13-Painting/3.jpg";
+import painting1 from "../assets/images/13-Painting/1.webp";
+import painting2 from "../assets/images/13-Painting/2.webp";
+import painting3 from "../assets/images/13-Painting/3.webp";
 
-import doors1 from "../assets/images/14-Doors/1.jpg";
-import doors2 from "../assets/images/14-Doors/2.jpg";
-import doors3 from "../assets/images/14-Doors/3.jpg";
+import doors1 from "../assets/images/14-Doors/1.webp";
+import doors2 from "../assets/images/14-Doors/2.webp";
+import doors3 from "../assets/images/14-Doors/3.webp";
 
-import landscape1 from "../assets/images/15-Landscape/1.jpg";
-import landscape2 from "../assets/images/15-Landscape/2.jpg";
-import landscape3 from "../assets/images/15-Landscape/3.jpg";
+import landscape1 from "../assets/images/15-Landscape/1.webp";
+import landscape2 from "../assets/images/15-Landscape/2.webp";
+import landscape3 from "../assets/images/15-Landscape/3.webp";
 
 import { reactive } from "vue";
 import { useI18n } from "vue-i18n";

@@ -18,7 +18,7 @@
 <style scoped>
 .hero {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.911)),
-    url("../assets/images/hero-background.jpg");
+    url("../assets/images/hero-background.webp");
   width: 100%;
   min-height: 640px;
   background-size: cover;

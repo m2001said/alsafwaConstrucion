@@ -1,7 +1,7 @@
 <template>
   <div class="feature">
-    <img class="feature1-img" alt="feature1 house" src="../assets/images/feature1.png" />
-    <img class="feature1-mobile-img" alt="feature1 house" src="../assets/images/feature1-mobile.jpg" />
+    <img class="feature1-img" alt="feature1 house" src="../assets/images/feature1.webp" />
+    <img class="feature1-mobile-img" alt="feature1 house" src="../assets/images/feature1-mobile.webp" />
     <div class="gradient-box flex flex-col">
       <h1 class="sub-title">{{ $t("WORKS_1.TITLE") }}</h1>
       <p class="description">

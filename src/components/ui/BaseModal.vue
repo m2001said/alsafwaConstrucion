@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="modal-button flex" @click.prevent="showModal = true">
+    <button class="modal-button flex" @click.prevent="openModal">
       <img class="modal-button-img" alt="feature2 design" :src="image1" />
       <div class="modal-button-overlay"></div>
       <p>{{ title }}</p>
@@ -8,12 +8,12 @@
 
     <div v-if="showModal === true">
       <transition name="fade" appear>
-        <div class="modal-overlay" @click.prevent="showModal = false"></div>
+        <div class="modal-overlay" @click.prevent="closeModal"></div>
       </transition>
 
       <transition name="slide" appear>
         <form class="form">
-          <button class="close-button" @click.prevent="showModal = false" type="button"></button>
+          <button class="close-button" @click.prevent="closeModal" type="button"></button>
           <h1 class="form-title">{{ title }}</h1>
           <p class="form-description">
             {{ description }}
@@ -31,7 +31,18 @@
 
 <script setup>
 import { ref } from "vue";
+
 const showModal = ref(false);
+
+const openModal = () => {
+  showModal.value = true;
+  document.body.style.overflowY = "hidden";
+};
+
+const closeModal = () => {
+  showModal.value = false;
+  document.body.style.overflowY = "";
+};
 
 defineProps(["title", "description", "image1", "image2", "image3"]);
 </script>
@@ -159,20 +170,35 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   right: 20px;
 } */
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1250px) {
+  .form {
+    width: 90vw;
+  }
   .form-images {
     gap: 15px;
   }
 
   .form-images img {
-    max-width: 200px;
-   width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    max-width: 27vw;
   }
-} */
+}
+
 @media (max-width: 900px) {
+  .form {
+    justify-content: start;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+  .form-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .form-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
   .modal-button,
   .modal-button img,
   .modal-button-overlay {
@@ -185,6 +211,18 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   }
 }
 @media (max-width: 660px) {
+  .form-images {
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .form-images img {
+    /* max-width: 39vw;
+    height: 250px; */
+    max-width: 95%;
+    height: 150px;
+    /* object-fit: contain; */
+  }
   .close-button {
     top: 12px;
   }

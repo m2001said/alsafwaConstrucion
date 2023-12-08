@@ -48,20 +48,25 @@ img {
 
 .gradient-box {
   background: linear-gradient(to right, var(--color-orange), var(--color-golden));
-  padding: 6rem 5rem 6rem 2rem;
+  padding: 6rem 10rem 6rem 2rem;
   position: relative;
   align-items: flex-start;
 }
 .gradient-box::before {
   content: "";
   position: absolute;
-  right: -70%;
+  right: -50%;
   top: 0;
-  width: 70%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(to left, var(--color-orange), var(--color-golden));
 }
 
+@media (max-width: 1560px) {
+  .gradient-box {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+}
 @media (max-width: 1400px) {
   .gradient-box {
     padding: 4rem 0rem 4rem 2rem;
@@ -103,13 +108,14 @@ img {
     background: var(--color-light-yellow);
     flex-wrap: wrap;
     position: relative;
+    padding: 2rem 1rem;
   }
   .clip-box::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 70px;
+    width: 60px;
     height: 100%;
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
@@ -137,8 +143,12 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .clip-box,
+  .clip-box-images {
+    gap: 1rem;
+  }
   img {
-    max-width: 150px;
+    max-width: 42vw;
   }
 }
 </style>

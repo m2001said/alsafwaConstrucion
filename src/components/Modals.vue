@@ -1,15 +1,18 @@
 <template>
-  <div class="modals flex">
-    <base-modal
-      v-for="(item, index) in data"
-      :key="index"
-      :title="item.title"
-      :description="item.description"
-      :backgroundImage="item.backgroundImage"
-      :image1="item.image1"
-      :image2="item.image2"
-      :image3="item.image3"
-    ></base-modal>
+  <div>
+    <a id="services" name="anchor-section" class="anchor-section"></a>
+    <div class="modals flex">
+      <base-modal
+        v-for="(item, index) in data"
+        :key="index"
+        :title="item.title"
+        :description="item.description"
+        :backgroundImage="item.backgroundImage"
+        :image1="item.image1"
+        :image2="item.image2"
+        :image3="item.image3"
+      ></base-modal>
+    </div>
   </div>
 </template>
 
@@ -64,7 +67,7 @@ import landscape1 from "../assets/images/15-Landscape/1.webp";
 import landscape2 from "../assets/images/15-Landscape/2.webp";
 import landscape3 from "../assets/images/15-Landscape/3.webp";
 
-import { reactive } from "vue";
+import { reactive, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
 const i18n = useI18n({ useScope: "global" });
@@ -156,6 +159,16 @@ const data = reactive([
     image3: landscape3,
   },
 ]);
+
+watch(
+  () => i18n.locale.value,
+  () => {
+    data.forEach((item, index) => {
+      data[index].title = i18n.t(`WORKS_${index + 4}.TITLE`);
+      data[index].description = i18n.t(`WORKS_${index + 4}.DESCRIPTION`);
+    });
+  }
+);
 </script>
 
 <style scoped>

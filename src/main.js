@@ -7,8 +7,8 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 const i18n = createI18n({
-  locale: "ar",
-  legacy: false, // you must set `false`, to use Composition API
+  locale: localStorage.getItem("userLocale") || "ar",
+  legacy: false,
   messages: {
     ar: ar,
     en: en,

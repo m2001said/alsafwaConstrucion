@@ -3,7 +3,7 @@
     <button class="modal-button flex" @click.prevent="openModal">
       <img class="modal-button-img" alt="feature2 design" :src="image1" />
       <div class="modal-button-overlay"></div>
-      <p>{{ title }}</p>
+      <p class="">{{ title }}</p>
     </button>
 
     <div v-if="showModal === true">
@@ -52,6 +52,7 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  font-family: inherit;
 }
 .modal-button img {
   border-radius: 10px;
@@ -78,7 +79,7 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   font-weight: 600;
   z-index: 1;
   color: var(--color-white);
-  font-size: 30px;
+  font-size: 25px;
 }
 .modal-overlay {
   position: fixed;
@@ -207,10 +208,17 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   }
 
   .modal-button p {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 @media (max-width: 660px) {
+  .modal-button,
+  .modal-button img,
+  .modal-button-overlay {
+    width: 42vw;
+    height: 130px;
+  }
   .form-images {
     flex-direction: column;
     gap: 15px;
@@ -234,18 +242,14 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
     right: 12px;
   }
 }
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .modal-button,
   .modal-button img,
   .modal-button-overlay {
     width: 130px;
     height: 130px;
   }
-
-  .modal-button p {
-    font-size: 22px;
-  }
-}
+} */
 
 .fade-enter-active,
 .fade-leave-active {

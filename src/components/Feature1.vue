@@ -4,8 +4,8 @@
     <img class="feature1-mobile-img" alt="feature1 house" src="../assets/images/feature1-mobile.webp" />
 
     <div class="gradient-box flex flex-col">
-      <h1 class="sub-title">{{ $t("WORKS_1.TITLE") }}</h1>
-      <p class="description">
+      <h1 class="sub-title add-animation" animation-class="fade-in">{{ $t("WORKS_1.TITLE") }}</h1>
+      <p class="description add-animation" animation-class="come-up">
         {{ $t("WORKS_1.DESCRIPTION") }}
       </p>
     </div>

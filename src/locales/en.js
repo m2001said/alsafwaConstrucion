@@ -1,5 +1,5 @@
 export default {
-  TITLE: "Al_Safwa AlMomayza Company",
+  TITLE: "Al_Safwa AlMomayza Construction and Contracting",
   NAVBAR: {
     MAIN: "Home",
     SERVICES: "Our Services",

@@ -15,12 +15,16 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   max-width: 1800px;
   margin: 0 auto;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 button {
@@ -93,5 +97,47 @@ a {
   .title,
   .sub-title {
     font-size: 1.4rem;
+  }
+}
+
+/* ------------------animation---------- */
+.add-animation {
+  position: relative;
+  opacity: 0;
+}
+
+.fade-in,
+.come-up {
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
+  animation-delay: 200ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-in {
+  animation-name: fade_in;
+}
+.come-up {
+  animation-name: come_up;
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes come_up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

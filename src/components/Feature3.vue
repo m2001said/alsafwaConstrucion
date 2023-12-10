@@ -1,8 +1,8 @@
 <template>
   <div class="feature flex">
     <div class="gradient-box flex flex-col">
-      <h1 class="sub-title">{{ $t("WORKS_3.TITLE") }}</h1>
-      <p class="description">
+      <h1 class="sub-title add-animation" animation-class="fade-in">{{ $t("WORKS_3.TITLE") }}</h1>
+      <p class="description add-animation" animation-class="come-up">
         {{ $t("WORKS_3.DESCRIPTION") }}
       </p>
     </div>
@@ -10,12 +10,32 @@
     <div class="polygon"></div>
     <div class="clip-box flex">
       <div class="clip-box-images clip-box-images-1 flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/1.webp" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/2.webp" />
+        <img
+          class="img-1 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/3-Roads/1.webp"
+        />
+        <img
+          class="img-2 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/3-Roads/2.webp"
+        />
       </div>
       <div class="clip-box-images clip-box-images-2 flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/3-Roads/3.webp" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/3-Roads/4.webp" />
+        <img
+          class="img-1 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/3-Roads/3.webp"
+        />
+        <img
+          class="img-2 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/3-Roads/4.webp"
+        />
       </div>
     </div>
   </div>

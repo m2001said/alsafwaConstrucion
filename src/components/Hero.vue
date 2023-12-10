@@ -1,16 +1,16 @@
 <template>
   <div class="hero flex flex-col">
     <a id="hero" name="anchor-section" class="anchor-section"></a>
-    <p class="title">
+    <p class="title add-animation" animation-class="come-up">
       {{ $t("HERO.TITLE") }} <br class="br" />
       <span> {{ $t("HERO.TITLE_REST") }}</span>
     </p>
 
-    <p class="description">
+    <p class="description add-animation" animation-class="come-up">
       {{ $t("HERO.DESCRIPTION") }}
     </p>
 
-    <a class="hero-button" href="#services">{{ $t("HERO.SERVICES") }}</a>
+    <a class="hero-button add-animation" animation-class="fade-in" href="#services">{{ $t("HERO.SERVICES") }}</a>
   </div>
 </template>
 

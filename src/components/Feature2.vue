@@ -3,15 +3,30 @@
     <div class="polygon"></div>
     <div class="clip-box flex">
       <div class="clip-box-images flex flex-col">
-        <img class="img-1" alt="feature2 design" src="../assets/images/2-2D-3D/2.webp" />
-        <img class="img-2" alt="feature2 design" src="../assets/images/2-2D-3D/3.webp" />
+        <img
+          class="img-1 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/2-2D-3D/2.webp"
+        />
+        <img
+          class="img-2 add-animation"
+          animation-class="come-up"
+          alt="feature2 design"
+          src="../assets/images/2-2D-3D/3.webp"
+        />
       </div>
-      <img class="img-3" alt="feature2 design" src="../assets/images/2-2D-3D/1.webp" />
+      <img
+        class="img-3 add-animation"
+        animation-class="come-up"
+        alt="feature2 design"
+        src="../assets/images/2-2D-3D/1.webp"
+      />
     </div>
 
     <div class="gradient-box flex flex-col">
-      <h1 class="sub-title">{{ $t("WORKS_2.TITLE") }}</h1>
-      <p class="description">{{ $t("WORKS_2.DESCRIPTION") }}</p>
+      <h1 class="sub-title add-animation" animation-class="fade-in">{{ $t("WORKS_2.TITLE") }}</h1>
+      <p class="description add-animation" animation-class="come-up">{{ $t("WORKS_2.DESCRIPTION") }}</p>
     </div>
   </div>
 </template>

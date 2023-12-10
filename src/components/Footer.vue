@@ -1,22 +1,27 @@
 <template>
   <div class="footer flex">
     <div class="flex flex-col">
-      <a class="logo" href="#hero">
+      <a class="logo add-animation" animation-class="fade-in" href="#hero">
         <img src="../assets/images/logo.svg" alt="logo" />
       </a>
 
-      <p>{{ $t("FOOTER.ADDRESS") }}</p>
-      <p>{{ $t("FOOTER.SAUDI") }}</p>
+      <p class="add-animation" animation-class="come-up">{{ $t("FOOTER.ADDRESS") }}</p>
+      <p class="add-animation" animation-class="come-up">{{ $t("FOOTER.SAUDI") }}</p>
     </div>
 
-    <div class="contact flex flex-col">
-      <h1>{{ $t("CONTACT") }}</h1>
-      <a class="contact-box flex" href="mailto:info@alsafwaconstruction.com">
+    <div id="contact" class="contact flex flex-col">
+      <h1 class="add-animation" animation-class="fade-in">{{ $t("CONTACT") }}</h1>
+      <a class="contact-box flex add-animation" animation-class="come-up" href="mailto:info@alsafwaconstruction.com">
         <img class="icon" src="../assets/images/email.svg" alt="logo" />
         <p>info@alsafwaconstruction.com</p>
       </a>
 
-      <a class="contact-box flex" href="https://wa.me/966569734699" target="_blank">
+      <a
+        class="contact-box flex add-animation"
+        animation-class="come-up"
+        href="https://wa.me/966569734699"
+        target="_blank"
+      >
         <img class="icon" src="../assets/images/phone.svg" alt="logo" />
         <p dir="ltr">+966 56 973 4699</p>
       </a>

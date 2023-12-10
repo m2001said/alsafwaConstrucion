@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="modal-button flex" @click.prevent="openModal">
+    <button class="modal-button flex add-animation" animation-class="come-up" @click.prevent="openModal">
       <img class="modal-button-img" alt="feature2 design" :src="image1" />
       <div class="modal-button-overlay"></div>
       <p class="">{{ title }}</p>

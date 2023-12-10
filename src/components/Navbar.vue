@@ -10,7 +10,7 @@
       <nav class="navbar-links-desktop">
         <a class="navbar-link" href="#hero">{{ $t("NAVBAR.MAIN") }}</a>
         <a class="navbar-link" href="#services">{{ $t("NAVBAR.SERVICES") }}</a>
-        <a class="navbar-link" href="#about">{{ $t("NAVBAR.WHO_US") }}</a>
+        <!-- <a class="navbar-link" href="#about">{{ $t("NAVBAR.WHO_US") }}</a> -->
         <a class="navbar-link" href="#contact">{{ $t("NAVBAR.CONTACT") }}</a>
       </nav>
 
@@ -38,15 +38,13 @@
     <transition name="slide" appear>
       <div v-show="expandNav" class="mobile-nav">
         <nav class="navbar-links-mobile flex flex-col">
-          <button class="navbar-link">الرئيسية</button>
-          <button class="navbar-link">خدماتنا</button>
-          <button class="navbar-link">عن الشركة</button>
-          <button class="navbar-link">تواصل</button>
+          <a class="navbar-link" href="#hero">{{ $t("NAVBAR.MAIN") }}</a>
+          <a class="navbar-link" href="#services">{{ $t("NAVBAR.SERVICES") }}</a>
+          <!-- <a class="navbar-link" href="#about">{{ $t("NAVBAR.WHO_US") }}</a> -->
+          <a class="navbar-link" href="#contact">{{ $t("NAVBAR.CONTACT") }}</a>
         </nav>
-
-        <!-- email , whatsapp -->
-        <div class=""></div></div
-    ></transition>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -67,8 +65,11 @@ const changeLanguage = () => {
   const newLocale = i18n.locale.value === "ar" ? "en" : "ar";
   i18n.locale.value = newLocale;
   localStorage.setItem("userLocale", newLocale);
-  //   document.querySelector("html").setAttribute("lang", newLocale);
+
+  //   refresh the title
+  document.title = i18n.t("TITLE");
 };
+//   document.querySelector("html").setAttribute("lang", newLocale);
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
@@ -108,7 +109,8 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 460px;
+  /* max-width: 460px; */
+  max-width: 350px;
   width: 100%;
   gap: 10px;
 }
@@ -212,7 +214,7 @@ onMounted(() => {
     box-shadow: 0 18px 34px -10px rgba(0, 0, 0, 0.25);
     height: calc(100vh - 72px);
     overflow-y: auto;
-    z-index: 1;
+    z-index: 5;
   }
   .navbar-links-mobile {
     gap: 30px;

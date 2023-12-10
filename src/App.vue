@@ -1,13 +1,17 @@
 <template>
-  <navbar></navbar>
-  <hero></hero>
-  <feature1></feature1>
-  <feature2></feature2>
-  <feature3></feature3>
-  <modals></modals>
-  <Footer></Footer>
+  <loader v-if="isLoading"></loader>
+  <div v-else>
+    <navbar></navbar>
+    <hero></hero>
+    <feature1></feature1>
+    <feature2></feature2>
+    <feature3></feature3>
+    <modals></modals>
+    <Footer></Footer>
+  </div>
 </template>
 <script setup>
+import Loader from "./components/ui/Loader.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Feature1 from "./components/Feature1.vue";
@@ -15,9 +19,46 @@ import Feature2 from "./components/Feature2.vue";
 import Feature3 from "./components/Feature3.vue";
 import Modals from "./components/Modals.vue";
 import Footer from "./components/Footer.vue";
+
+import { useI18n } from "vue-i18n";
+import { onMounted, ref } from "vue";
+
+const i18n = useI18n();
+const isLoading = ref(true);
+document.title = i18n.t("TITLE");
+
+document.createElement("meta").setAttribute("content", i18n.t("ABOUT_US"));
+
+onMounted(() => {
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 2000);
+
+  setTimeout(() => {
+    // intersection observer
+    const animatedElements = document.querySelectorAll(".add-animation");
+    const options = {};
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const animationClass = entry.target.getAttribute("animation-class");
+        const animationClassArr = animationClass.split(" ");
+
+        if (entry.isIntersecting) {
+          animationClassArr.forEach((c) => {
+            entry.target.classList.add(c);
+          });
+        } else {
+          animationClassArr.forEach((c) => {
+            entry.target.classList.remove(c);
+          });
+        }
+      });
+    }, options);
+    animatedElements.forEach((element) => {
+      observer.observe(element);
+    });
+  }, 2000);
+});
 </script>
 
-<style scoped>
-@media (max-width: 1024px) {
-}
-</style>
+<style scoped></style>

@@ -186,7 +186,7 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
   .form {
     justify-content: start;
     overflow-y: auto;
-    max-height: 100%;
+    max-height: 85%;
   }
   .form-title {
     font-weight: 700;
@@ -222,6 +222,7 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
     flex-direction: column;
     gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
   .form-images img {
     /* max-width: 39vw;

@@ -2,7 +2,6 @@
   <div>
     <header class="navbar-container">
       <!-- logo -->
-
       <a class="logo" href="#hero">
         <img src="../assets/images/logo.svg" alt="logo" />
       </a>
@@ -32,9 +31,9 @@
           <span></span>
         </div>
       </div>
-      <!-- nav links of mobile-->
     </header>
 
+    <!-- nav links of mobile-->
     <transition name="slide" appear>
       <div v-show="expandNav" class="mobile-nav">
         <nav class="navbar-links-mobile flex flex-col">
@@ -68,8 +67,8 @@ const changeLanguage = () => {
 
   //   refresh the title
   document.title = i18n.t("TITLE");
+  document.body.dir = i18n.locale.value === "ar" ? "rtl" : "ltr";
 };
-//   document.querySelector("html").setAttribute("lang", newLocale);
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
@@ -164,6 +163,10 @@ onMounted(() => {
   width: 25%;
   left: 0px;
 }
+[dir="ltr"] .toggle-menu span:nth-child(3) {
+  right: 0px;
+  left: auto;
+}
 .toggle-menu.active span:nth-child(1) {
   transform: translateX(30px);
 }
@@ -215,6 +218,10 @@ onMounted(() => {
     height: calc(100vh - 72px);
     overflow-y: auto;
     z-index: 5;
+  }
+  [dir="ltr"] .mobile-nav {
+    left: auto;
+    right: 0;
   }
   .navbar-links-mobile {
     gap: 30px;

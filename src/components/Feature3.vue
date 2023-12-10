@@ -66,6 +66,13 @@
   left: 0;
   z-index: 1;
 }
+[dir="ltr"] .polygon {
+  right: 0;
+  left: auto;
+  transform: scaleX(-1);
+  height: 120%;
+}
+
 img {
   max-width: 300px;
   z-index: 1;
@@ -79,6 +86,11 @@ img {
   align-items: flex-start;
   max-width: 50%;
 }
+
+[dir="ltr"] .gradient-box {
+  padding: 6rem 4rem 6rem 2rem;
+}
+
 .gradient-box::before {
   content: "";
   position: absolute;
@@ -88,6 +100,10 @@ img {
   height: 100%;
   background: linear-gradient(to right, var(--color-orange), var(--color-golden));
 }
+[dir="ltr"] .gradient-box::before {
+  right: -70%;
+  left: auto;
+}
 
 .clip-box-images-1 {
   margin-top: -40px;
@@ -96,6 +112,10 @@ img {
 @media (max-width: 1400px) {
   .gradient-box {
     padding: 4rem 2rem 4rem 0rem;
+  }
+  [dir="ltr"] .gradient-box {
+    padding: 4rem 0rem 4rem 2rem;
+    margin-top: 20px;
   }
 }
 
@@ -142,6 +162,11 @@ img {
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
   }
+  [dir="ltr"] .clip-box::before {
+    right: auto;
+    left: 0;
+    transform: scaleX(-1);
+  }
   img {
     max-width: 200px;
     width: 100%;
@@ -152,6 +177,11 @@ img {
     position: relative;
     z-index: 0;
     max-width: 100%;
+  }
+
+  [dir="ltr"] .gradient-box {
+    padding: 2rem 2rem 2.5rem 1rem;
+    margin-top: 0;
   }
   .gradient-box::before {
     display: none;
@@ -166,6 +196,11 @@ img {
     background-color: var(--color-white);
     clip-path: polygon(100% 100%, 0 0, 0 100%);
     z-index: 2;
+  }
+  [dir="ltr"] .gradient-box::after {
+    right: 0;
+    left: auto;
+    transform: scaleX(-1);
   }
 }
 

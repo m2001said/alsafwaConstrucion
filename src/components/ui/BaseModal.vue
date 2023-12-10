@@ -128,7 +128,6 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
 .close-button {
   cursor: pointer;
   top: 20px;
-  left: 20px;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -162,14 +161,13 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
 .close-button:hover:after {
   transform: translate(-50%, -50%) rotate(225deg);
 }
-
-/* [dir="rtl"] .close-button {
+[dir="rtl"] .close-button {
   left: 20px;
 }
 
 [dir="ltr"] .close-button {
   right: 20px;
-} */
+}
 
 @media (max-width: 1250px) {
   .form {
@@ -194,6 +192,7 @@ defineProps(["title", "description", "image1", "image2", "image3"]);
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 18px;
+    padding-top: 10px;
   }
   .form-description {
     font-size: 16px;

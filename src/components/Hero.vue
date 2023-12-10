@@ -33,6 +33,7 @@
   color: white;
   font-size: 55px;
   font-weight: 800;
+  line-height: 1.2;
 }
 .title span {
   font-weight: 700;
@@ -76,7 +77,7 @@
     padding: 1rem;
   }
   .title {
-    line-height: 1.3;
+    line-height: 1.1;
     font-size: 2rem;
   }
 
@@ -86,7 +87,7 @@
 
   .hero-button {
     font-size: 1.5rem;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 1.2rem;
   }
 }
 

@@ -10,6 +10,7 @@
     <Footer></Footer>
   </div>
 </template>
+
 <script setup>
 import Loader from "./components/ui/Loader.vue";
 import Navbar from "./components/Navbar.vue";
@@ -26,10 +27,10 @@ import { onMounted, ref } from "vue";
 const i18n = useI18n();
 const isLoading = ref(true);
 document.title = i18n.t("TITLE");
-
 document.createElement("meta").setAttribute("content", i18n.t("ABOUT_US"));
 
 onMounted(() => {
+  document.body.dir = i18n.locale.value === "ar" ? "rtl" : "ltr";
   setTimeout(() => {
     isLoading.value = false;
   }, 2000);

@@ -3,6 +3,7 @@
   <div v-else>
     <navbar></navbar>
     <hero></hero>
+    <about-us></about-us>
     <feature1></feature1>
     <feature2></feature2>
     <feature3></feature3>
@@ -15,6 +16,7 @@
 import Loader from "./components/ui/Loader.vue";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
+import AboutUs from "./components/AboutUs.vue";
 import Feature1 from "./components/Feature1.vue";
 import Feature2 from "./components/Feature2.vue";
 import Feature3 from "./components/Feature3.vue";

@@ -17,6 +17,21 @@ export default {
   WHO_US: "About Us",
   ABOUT_US:
     "Al-Safwa Al-Mumayaza Company is specialized in the field of concrete works and interior and exterior finishes in the Kingdom of Saudi Arabia. The company is based in Jeddah and relies on the concept of comprehensive quality. It ensures the possession of engineering, technical, and administrative staff to provide the best service quality to the client, taking into account the execution period, cost, and the least supervision ratio in the Kingdom. Post-execution warranty is also considered a fundamental pillar for maintaining the establishment's relationship with clients.",
+  DOWNLOAD_PROFILE: "Download profile",
+
+  SERVICES: {
+    TITLE_1: "Design",
+    DESCRIPTION_1:
+      "Coordination of client requirements, interior and exterior design, creating computer graphic models, and implementing 2D & 3D paintings and drawings.",
+
+    TITLE_2: "Technical Office",
+    DESCRIPTION_2:
+      "Pricing and quotations, preparing tenders, quantity surveying, bill of quantities, shop drawings, and as-built drawings.",
+
+    TITLE_3: "Site Works",
+    DESCRIPTION_3:
+      "Excavation, backfilling, and road works, concrete works, interlock installations, isolation works, infrastructural works, wall constructions, flooring installations, ceiling installations, gypsum board partitions, cladding installations, glass partitions, painting and finishing, decorations, and hard landscaping.",
+  },
 
   WORKS_1: {
     TITLE: "Design",

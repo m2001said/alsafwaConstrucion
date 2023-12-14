@@ -47,25 +47,6 @@
   text-align: center;
 }
 
-.hero-button {
-  background: var(--color-white);
-  color: var(--color-orange);
-  border-radius: 5px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  border: none;
-  padding: 0.5rem 2.3rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  box-shadow: var(--color-orange) 0px 0px 7px;
-  transition: all 0.3s;
-}
-
-.hero-button:hover {
-  background: var(--color-orange);
-  color: var(--color-white);
-  box-shadow: var(--color-orange) 0px 0px 17px;
-}
 .br {
   display: none;
 }

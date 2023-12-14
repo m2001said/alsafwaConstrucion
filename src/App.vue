@@ -23,11 +23,21 @@ import Footer from "./components/Footer.vue";
 
 import { useI18n } from "vue-i18n";
 import { onMounted, ref } from "vue";
+import { useHead } from "@vueuse/head";
+import { computed } from "vue";
 
 const i18n = useI18n();
 const isLoading = ref(true);
-document.title = i18n.t("TITLE");
-document.createElement("meta").setAttribute("content", i18n.t("ABOUT_US"));
+
+useHead({
+  title: computed(() => i18n.t("TITLE")),
+  meta: [
+    {
+      name: "description",
+      content: computed(() => i18n.t("ABOUT_US")),
+    },
+  ],
+});
 
 onMounted(() => {
   document.body.dir = i18n.locale.value === "ar" ? "rtl" : "ltr";

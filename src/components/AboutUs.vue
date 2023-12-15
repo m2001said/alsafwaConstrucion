@@ -51,7 +51,7 @@ import AboutCard from "./ui/AboutCard.vue";
   background: linear-gradient(to left, rgba(31, 31, 31, 0.85), rgba(31, 31, 31, 0.85)),
     url("../assets/images/about-background.webp");
   color: var(--color-white);
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   gap: 0.5rem;
 }
 .about-title {
@@ -100,10 +100,14 @@ import AboutCard from "./ui/AboutCard.vue";
   max-width: 650px;
   background: linear-gradient(to left, var(--color-orange), var(--color-golden));
   align-items: flex-start;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 @media (max-width: 900px) {
+  .about-info,
+  .about-services {
+    padding: 2rem 1rem;
+  }
   .sub-title {
     font-weight: bold;
   }

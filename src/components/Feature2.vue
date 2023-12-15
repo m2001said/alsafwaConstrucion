@@ -169,8 +169,12 @@ img {
     width: 100%;
   }
 
-  [dir="ltr"] .gradient-box,
   .gradient-box {
+    padding: 2rem 1rem 2.5rem 2rem;
+    position: relative;
+    z-index: 0;
+  }
+  [dir="ltr"] .gradient-box {
     padding: 2rem 2rem 2.5rem 1rem;
     position: relative;
     z-index: 0;

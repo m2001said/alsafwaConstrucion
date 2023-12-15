@@ -173,7 +173,7 @@ img {
   }
 
   .gradient-box {
-    padding: 2rem 1.5rem 2.5rem 2rem;
+    padding: 2rem 1rem 2.5rem 2rem;
     position: relative;
     z-index: 0;
     max-width: 100%;

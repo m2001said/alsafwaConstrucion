@@ -23,10 +23,10 @@
 .gradient-box {
   max-width: 54%;
   align-items: flex-start;
-  padding: 2rem 1.5rem 4rem 0;
+  padding: 2rem 2rem 4rem 0;
 }
 [dir="ltr"] .gradient-box {
-  padding: 2rem 0 4rem 1.5rem;
+  padding: 2rem 0 4rem 2rem;
 }
 
 .feature1-img {
@@ -84,7 +84,7 @@
   .gradient-box {
     background: linear-gradient(to left, var(--color-orange), var(--color-golden));
     max-width: 100%;
-    padding: 2rem 2rem 2.5rem 2rem;
+    padding: 2rem 1rem 2.5rem 2rem;
   }
   [dir="ltr"] .gradient-box {
     padding: 2rem 2rem 2.5rem 1rem;

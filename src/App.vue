@@ -24,19 +24,23 @@ import Modals from "./components/Modals.vue";
 import Footer from "./components/Footer.vue";
 
 import { useI18n } from "vue-i18n";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, computed, reactive } from "vue";
 import { useHead } from "@vueuse/head";
-import { computed } from "vue";
 
 const i18n = useI18n();
 const isLoading = ref(true);
 
+const siteData = reactive({
+  title: i18n.t("TITLE"),
+  description: i18n.t("ABOUT_US"),
+});
+
 useHead({
-  title: computed(() => i18n.t("TITLE")),
+  title: computed(() => siteData.title),
   meta: [
     {
       name: "description",
-      content: computed(() => i18n.t("ABOUT_US")),
+      content: computed(() => siteData.description),
     },
   ],
 });
